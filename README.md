@@ -155,7 +155,50 @@ thao tác dòng lệnh trên file D:\Apache24\bin\httpd.exe với các tham số
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be8d5e0d-f5cb-47ea-8065-47459c81d881" />
 - kết quả -
 <img width="960" height="1030" alt="image" src="https://github.com/user-attachments/assets/33f36a36-5f92-4054-b755-1a05700698eb" />
+## 2.7. Nhận xét bài làm của mình:
+ Hiểu quá trình cài đặt các phần mềm và thư viện:
 
+Biết cài đặt và cấu hình Apache, Node.js, Node-RED, SQL Server.
 
+Hiểu chức năng từng phần mềm trong hệ thống (Apache: web server, Node-RED: xử lý API, SQL Server: lưu dữ liệu).
 
+Biết cài đặt các thư viện trong Node-RED (node-red-contrib-mssql-plus, node-red-contrib-cron-plus, node-red-contrib-telegrambot, …).
 
+Hiểu cách cấu hình tài khoản quản trị Node-RED trong file settings.js và khởi động lại bằng lệnh nssm restart a1-nodered.
+
+ Hiểu cách sử dụng Node-RED để tạo API back-end:
+
+Dùng các node:
+[HTTP In] → [Function] → [MSSQL] → [HTTP Response].
+
+Node HTTP In: nhận request từ client (URL /timkiem?q=...).
+
+Node Function: xử lý tham số và sinh câu SQL.
+
+Node MSSQL: truy vấn dữ liệu từ SQL Server.
+
+Node HTTP Response: trả kết quả JSON về cho client.
+
+Biết test API qua trình duyệt hoặc công cụ gọi URL → kết quả trả về đúng dữ liệu.
+
+ Hiểu cách front-end tương tác với back-end:
+
+Front-end gồm 3 file: index.html, nguyenvanhoan.css, nguyenvanhoan.js.
+
+Giao diện có form nhập từ khóa tìm kiếm.
+
+File JS dùng fetch() gửi request đến API Node-RED (http://localhost:1880/timkiem?q=...).
+
+Nhận JSON phản hồi → hiển thị kết quả lên trang web.
+
+Hiểu luồng hoạt động:
+Người dùng → Front-end → API Node-RED → CSDL → Node-RED trả JSON → Hiển thị kết quả.
+
+nhưng thứ học được từ bài tập:
+
+Đã hiểu toàn bộ quy trình xây dựng ứng dụng web 3 tầng:
+Database (SQL Server) → Back-end (Node-RED) → Front-end (Apache, HTML/CSS/JS).
+
+Biết cách các phần mềm kết nối và trao đổi dữ liệu.
+
+Hoàn thành đúng yêu cầu và hiểu rõ cách vận hành hệ thống.
